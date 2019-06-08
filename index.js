@@ -50,6 +50,6 @@ server.get('/api/users/:id', (req, res) => {
             }
         })
         .catch(err => {
-            res.status(500).json(err)
+            res.status(500).json({ error: "The user information could not be retrieved." })
         })
 })
